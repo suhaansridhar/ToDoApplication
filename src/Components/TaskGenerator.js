@@ -2,7 +2,7 @@ import React from 'react';
 import {AiFillDelete} from 'react-icons/ai';
 import {GrCheckbox} from 'react-icons/gr';
 
-const TaskGenerator = ({taskName, id, removeTask}) => {
+const TaskGenerator = ({taskName, removeTask, id}) => {
   return (
     <div className='task--generator--container'>
         <div className="task--generator--middle--container">

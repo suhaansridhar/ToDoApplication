@@ -7,10 +7,16 @@ const AddTask = ({addTask}) => {
     function handleChange(event){
         setTaskName(event.target.value);
     }
+
+    function clicked(){
+      addTask(taskName);
+      setTaskName('');
+    }
   return (
     <div className='add--task--container'>
-        <input type="text" value={taskName} onChange={handleChange}/>
-        <button onClick={() => addTask(taskName)}>Add</button>
+        <input type="text" value={taskName} onChange={handleChange}
+        placeholder='Enter the task'/>
+        <button onClick={clicked}>Add</button>
     </div>
   )
 }
