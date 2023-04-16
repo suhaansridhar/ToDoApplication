@@ -13,10 +13,11 @@ const App = () => {
     if(task.length === 0){
       alert('cant add');
     }else{
-    let id= nanoid();
-    let tempArray = {id, task};
-    setTasksArray(Array => [...Array, tempArray]);
-    setTask('') }
+      let id= nanoid();
+      let tempArray = {id, task};
+      setTasksArray(Array => [...Array, tempArray]);
+      setTask('') 
+    }
   }
 
   return (

@@ -81,3 +81,12 @@ code {
 .add--task--container button{
   cursor: pointer;
 }
+
+li{
+  list-style-type: none;
+  margin-left: 60px;
+}
+
+button{
+  margin-left: 10px;
+}
