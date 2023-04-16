@@ -7,10 +7,10 @@ const TaskGenerator = ({taskName, id, removeTask}) => {
     <div className='task--generator--container'>
         <div className="task--generator--middle--container">
             <div>
-                <GrCheckbox />
+                <div className="task--generator--container--checkbox"><button><GrCheckbox /></button></div>
                 <h3>{taskName}</h3>
             </div>
-            <button onClick={() => removeTask(id)}><AiFillDelete /></button>
+            <button onClick={() => removeTask(id)} className='task--generator--delete--button'><AiFillDelete /></button>
         </div>
     </div>
   )
